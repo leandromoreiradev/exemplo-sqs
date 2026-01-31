@@ -1,5 +1,6 @@
 package com.javatechie.exemple_sqs_aws.consumer;
 
+import com.javatechie.exemple_sqs_aws.messages.MyMessage;
 import io.awspring.cloud.sqs.annotation.SqsListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
