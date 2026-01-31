@@ -1,0 +1,95 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.javatechie:exemple-sqs-aws >-------------------
+[INFO] Building exemple-sqs-aws 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.2:run (default-cli) > test-compile @ exemple-sqs-aws >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ exemple-sqs-aws ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ exemple-sqs-aws ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ exemple-sqs-aws ---
+[INFO] skip non existing resourceDirectory C:\Users\Administrador\Desktop\Leo Documentos\Estudos TI\Tutoriais - AWS\SQS\exemple-sqs-aws\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ exemple-sqs-aws ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.2:run (default-cli) < test-compile @ exemple-sqs-aws <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.2:run (default-cli) @ exemple-sqs-aws ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-01-31T15:51:01.398-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] c.j.e.ExempleSqsAwsApplication           : Starting ExempleSqsAwsApplication using Java 21.0.8 with PID 29744 (C:\Users\Administrador\Desktop\Leo Documentos\Estudos TI\Tutoriais - AWS\SQS\exemple-sqs-aws\target\classes started by Leandro Moreira in C:\Users\Administrador\Desktop\Leo Documentos\Estudos TI\Tutoriais - AWS\SQS\exemple-sqs-aws)
+2026-01-31T15:51:01.406-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] c.j.e.ExempleSqsAwsApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-01-31T15:51:02.334-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-31T15:51:02.348-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-31T15:51:02.348-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-31T15:51:02.411-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 832 ms
+2026-01-31T15:51:03.353-03:00  WARN 29744 --- [exemple-sqs-aws] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultSqsListenerContainerFactory' defined in class path resource [io/awspring/cloud/autoconfigure/sqs/SqsAutoConfiguration.class]: Failed to instantiate [io.awspring.cloud.sqs.config.SqsMessageListenerContainerFactory]: Factory method 'defaultSqsListenerContainerFactory' threw exception with message: 'org.springframework.boot.context.properties.PropertyMapper org.springframework.boot.context.properties.PropertyMapper.alwaysApplyingWhenNonNull()'
+2026-01-31T15:51:05.450-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-01-31T15:51:05.459-03:00  INFO 29744 --- [exemple-sqs-aws] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-31T15:51:05.477-03:00 ERROR 29744 --- [exemple-sqs-aws] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    io.awspring.cloud.autoconfigure.sqs.SqsAutoConfiguration.configureProperties(SqsAutoConfiguration.java:134)
+
+The following method did not exist:
+
+    'org.springframework.boot.context.properties.PropertyMapper org.springframework.boot.context.properties.PropertyMapper.alwaysApplyingWhenNonNull()'
+
+The calling method's class, io.awspring.cloud.autoconfigure.sqs.SqsAutoConfiguration, was loaded from the following location:
+
+    jar:file:/C:/Users/Administrador/.m2/repository/io/awspring/cloud/spring-cloud-aws-autoconfigure/3.3.1/spring-cloud-aws-autoconfigure-3.3.1.jar!/io/awspring/cloud/autoconfigure/sqs/SqsAutoConfiguration.class
+
+The called method's class, org.springframework.boot.context.properties.PropertyMapper, is available from the following locations:
+
+    jar:file:/C:/Users/Administrador/.m2/repository/org/springframework/boot/spring-boot/4.0.2/spring-boot-4.0.2.jar!/org/springframework/boot/context/properties/PropertyMapper.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.boot.context.properties.PropertyMapper: file:/C:/Users/Administrador/.m2/repository/org/springframework/boot/spring-boot/4.0.2/spring-boot-4.0.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes io.awspring.cloud.autoconfigure.sqs.SqsAutoConfiguration and org.springframework.boot.context.properties.PropertyMapper
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.034 s
+[INFO] Finished at: 2026-01-31T15:51:05-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.2:run (default-cli) on project exemple-sqs-aws: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
